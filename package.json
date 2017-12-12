@@ -1,0 +1,29 @@
+{
+  "name": "survey-system",
+  "version": "1.0.0",
+  "description": "survey system application",
+  "main": "index.js",
+  "engines": {
+    "node": "8.9.0",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Daniela Pereira",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4",
+    "nodemon": "^1.12.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "stripe": "^5.3.0"
+  }
+}
